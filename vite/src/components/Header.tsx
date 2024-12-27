@@ -3,10 +3,9 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-<header className="header text-center p-4">
-  <h1 className="text-lg font-bold">My Mobile Web App</h1>
-</header>
-
+    <header className="header text-center py-6 px-8 my-4">
+      <h1 className="text-xl font-bold">새빛관</h1>
+    </header>
   );
 };
 
