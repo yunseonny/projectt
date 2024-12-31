@@ -3,5 +3,19 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "target": "esnext", 
+    "module": "esnext",
+    "jsx": "react-jsx", 
+    "strict": true, // 엄격한 타입 검사를 활성화
+    "esModuleInterop": true, // CommonJS 모듈을 ES 모듈로 변환할 수 있도록 설정
+    "allowSyntheticDefaultImports": true, // 기본 내보내기를 허용
+    "skipLibCheck": true, // 라이브러리 체크를 건너뜀
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성 강제
+    "baseUrl": ".", // 기본 URL 설정
+    "paths": {
+      "*": ["node_modules/*"] // 모듈을 찾을 경로 설정
+    }
+  }
 }
