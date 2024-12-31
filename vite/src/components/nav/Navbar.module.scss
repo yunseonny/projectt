@@ -1,0 +1,41 @@
+.navbar {
+    position: fixed;       
+    bottom: 0;                                
+    height: 60px;           
+
+    display: flex;         
+    align-items: center;   
+    justify-content: space-between; 
+
+    padding: 0 24px;        
+    background-color: white; 
+    border-top: 1px solid #f4f4f5; 
+
+    max-width: 400px;                          
+    width: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+
+    &__search-box {
+        width: fit-content;  
+        height: 100%;     
+        display: flex;     
+        align-items: center; 
+    }
+
+    &__home-box {
+        width: fit-content;   
+        height: 100%;        
+        display: flex;       
+        align-items: center;  
+        gap: 8px;            
+    }
+
+    &__user-box {
+        width: fit-content;    
+        height: 100%;    
+        display: flex;       
+        align-items: center;   
+        gap: 8px;              
+    }
+}
